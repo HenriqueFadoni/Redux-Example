@@ -11,10 +11,10 @@ const reducer = (state = initialState, action) => {
             return {counter: state.counter -1}
             break;
         case 'INCREMENTSFIVE':
-            return {counter: state.counter +5}
+            return {counter: state.counter + action.val}
             break;
         case 'REDUCESFIVE':
-            return {counter: state.counter -5}
+            return {counter: state.counter - action.val}
             break;
     }
     return state;
